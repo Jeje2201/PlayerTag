@@ -1,0 +1,45 @@
+# Configuration of PlayerTag by MrJeje_
+
+# JoinAlert :
+#   Player :  Players who got "playertag.join" permission got a notification if the player who join got tag.
+#   Console : The Console got a notification if the player who join got tag.
+
+# CommandAlert :
+#   OnAdd :  Players with "playertag.info" permission got a notification if someone add a tag on a player
+#   OnRemove : Players with "playertag.info" permission got a notification if someone remove a tag on a player
+#   OnClear : Players with "playertag.info" permission got a notification if someone clear all tags on a player
+
+# Sound :
+#  Join : The full list of sound you can set are here https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html Thanks to respect the case.
+
+JoinAlert:
+ Player: true
+ Console: true
+ Sound: true
+
+CommandAlert: 
+ OnAdd: true
+ OnRemove: true
+ OnClear: true
+ 
+Message:
+ PluginName: "&e[&aPlayerTag&e] &f"
+ PlayerOffline: "&c{1} &fis offline"
+ ErrorCommand: "&cYour command is wrong, please refer to &6/ptag"
+ NoPerm: "&cYou don't have the permission to do this!"
+ NoPlayersOnlineGotTags: "&fAll &aplayers &fhere are clean"
+ Kit: "&fSuccessfully got the &6PlayerTag &fkit"
+ AlreadyGotTag: "&c{1} &falready has &c{2}"
+ HasNoTag: "&c{1} &fhas no tags"
+ Immune: "&c{1} &fis &aimmune &fto tags"
+ ErrorOnRemove: "&c{1} &fdoesn't have &c{2}"
+ NoTagOnClick: "&c{1} &fis clean"
+ AddTag: "Successfully added &c{1} &fon &c{2}"
+ RemovedTag: "Successfully removed &c{1} &fon &c{2}"
+ ClearTag: "You Successfully removed all tags on &c{1}"
+ AlertAddTag: "&c{1} &fput &c{2} &fon &c{3}"
+ AlertRemoveTag: "&c{1} &fremoved &c{2} &fon &c{3}"
+ AlertClearTag: "&c{1} &fcleared all tags on &c{2}"
+
+Sound:
+ Join: "BLOCK_NOTE_PLING"

@@ -1,0 +1,8 @@
+name: PlayerTag
+version: 2.6
+author: MrJeje_
+main: fr.MrJeje_.Tag.Tag
+commands:
+ playertag: 
+  description: Show all Tag commands
+  aliases: [ptag]
