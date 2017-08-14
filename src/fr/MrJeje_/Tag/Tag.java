@@ -19,7 +19,6 @@ public class Tag extends JavaPlugin implements Listener {
 		PluginManager pm = getServer().getPluginManager(); //Indique qu'il existe d'autres classes a action
 		pm.registerEvents(new Join(this), this); //indique la classe particules a prendre en compte
 		pm.registerEvents(new Click(this), this);
-		
 	}
 	
 	public void onDisable(){

@@ -25,20 +25,20 @@ public class Join implements Listener {
 		public void onJoin(PlayerJoinEvent e){
 		Player p = e.getPlayer();
 		
-		for (Player s : Bukkit.getOnlinePlayers()){
-			if ((s.hasPermission("playertag.join")) && (p.getScoreboardTags().isEmpty() == false) && (config.getString("JoinAlert.Player") == "true")){
-/* a laisser le customisation possible */	s.sendMessage("§e[§aPlayerTag§e] §a"+p.getDisplayName()+ " §fjoined with §c"+ p.getScoreboardTags());
-				if (config.getString("JoinAlert.Sound") == "true"){
-					String LeSons = config.getString("Sound.Join");
-					s.playSound(s.getLocation(),Sound.valueOf(LeSons), 1, 1);
+			for (Player s : Bukkit.getOnlinePlayers()){
+				if ((s.hasPermission("playertag.join")) && (p.getScoreboardTags().isEmpty() == false) && (config.getString("JoinAlert.Player") == "true")){
+	/* a laisser le customisation possible */	s.sendMessage("§e[§aPlayerTag§e] §a"+p.getDisplayName()+ " §fjoined with §c"+ p.getScoreboardTags());
+					if (config.getString("JoinAlert.Sound") == "true"){
+						String LeSons = config.getString("Sound.Join");
+						s.playSound(s.getLocation(),Sound.valueOf(LeSons), 1, 1);
+					}
 				}
 			}
+			
+			if ((p.getScoreboardTags().isEmpty() == false) && (config.getString("JoinAlert.Console") == "true")){
+	/* a laisser le customisation possible */	System.out.println("[PlayerTag] "+p.getDisplayName()+ " joined with "+ p.getScoreboardTags());
+			}
 		}
-		
-		if ((p.getScoreboardTags().isEmpty() == false) && (config.getString("JoinAlert.Console") == "true")){
-/* a laisser le customisation possible */	System.out.println("[PlayerTag] "+p.getDisplayName()+ " joined with "+ p.getScoreboardTags());
-		}
-	}
 
 		
 		

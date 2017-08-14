@@ -191,7 +191,6 @@ public class LesCommandes implements CommandExecutor {
 
 					Player cible = Bukkit.getPlayerExact(args[1]);
 					String tag = args[2];
-					
 						
 						if(args[0].equalsIgnoreCase("add")){
 								if (p.hasPermission("playertag.add")){
